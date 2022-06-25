@@ -1,0 +1,109 @@
+{
+  "name": "iEdito",
+  "displayName": "啵啵助写",
+  "description": "如果你写单词有压力，不如让啵啵来为你搞定，你输入中国文，啵啵翻译",
+  "publisher": "itc-edito",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "translate",
+    "variable",
+    "bobo",
+    "翻译",
+    "变量"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "extension.iEdito",
+        "key": "Alt+shift+t",
+        "mac": "cmd+shift+t"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.iEdito",
+        "title": "运行啵啵助写",
+        "when": "editorTextFocus",
+        "category": "iEdito"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorTextFocus",
+          "command": "extension.iEdito"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "啵啵助写配置",
+      "properties": {
+        "iEdito.translationBaidu": {
+          "type": "string",
+          "default": "",
+          "description": "输入百度翻译appid和secretKey用逗号(id,key)分隔"
+        },
+        "iEdito.translationEngine": {
+          "type": "string",
+          "enum": [
+            "google",
+            "baidu"
+          ],
+          "enumDescriptions": [
+            "谷歌中国",
+            "百度翻译"
+          ],
+          "default": "google",
+          "description": "选择翻译引擎"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build:package": "vsce package",
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack --devtool nosources-source-map --config ./build/node-extension.webpack.config.js",
+    "watch": "webpack --watch --devtool nosources-source-map --config ./build/node-extension.webpack.config.js",
+    "package": "webpack --mode production --config ./build/node-extension.webpack.config.js",
+    "test-compile": "tsc -p ./",
+    "test-watch": "tsc -watch -p ./",
+    "release": "standard-version",
+    "publish": "npm run release && vsce publish"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/google-translate-api": "^2.3.1",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.50.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "standard-version": "^9.1.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "vscode-test": "^1.4.1",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "@asmagin/google-translate-api": "^8.0.2",
+    "change-case": "^4.1.2",
+    "node-baidu-translate": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": ""
+}
