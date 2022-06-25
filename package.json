@@ -4,6 +4,7 @@
   "description": "如果你写单词有压力，不如让啵啵来为你搞定，你输入中国文，啵啵翻译",
   "publisher": "itc-edito",
   "version": "0.0.2",
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.50.0"
   },
@@ -22,28 +23,22 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "keybindings": [
-      {
-        "command": "extension.iEdito",
-        "key": "Alt+shift+t",
-        "mac": "cmd+shift+t"
-      }
-    ],
-    "commands": [
-      {
-        "command": "extension.iEdito",
-        "title": "运行啵啵助写",
-        "when": "editorTextFocus",
-        "category": "iEdito"
-      }
-    ],
+    "keybindings": [{
+      "command": "extension.iEdito",
+      "key": "Alt+shift+t",
+      "mac": "cmd+shift+t"
+    }],
+    "commands": [{
+      "command": "extension.iEdito",
+      "title": "运行啵啵助写",
+      "when": "editorTextFocus",
+      "category": "iEdito"
+    }],
     "menus": {
-      "editor/context": [
-        {
-          "when": "editorTextFocus",
-          "command": "extension.iEdito"
-        }
-      ]
+      "editor/context": [{
+        "when": "editorTextFocus",
+        "command": "extension.iEdito"
+      }]
     },
     "configuration": {
       "type": "object",
