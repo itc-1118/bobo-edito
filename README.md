@@ -1,4 +1,4 @@
-# [啵啵翻译助写]()
+# [啵啵翻译助写](https://marketplace.visualstudio.com/items?itemName=itc-edito.iEdito)
 
 [issue](https://github.com/itc-1118/bobo-edito/issues) 
 ```
@@ -25,6 +25,11 @@
    设置图
    Code->首选项->键盘快捷方式 
 ![image.png](https://github.com/itc-1118/bobo-edito/blob/master/images/%E5%BF%AB%E6%8D%B7%E9%94%AE.png?raw=true)
+
+ # 最佳实践
+
+ # 最佳实践
+
  
  
  
