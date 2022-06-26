@@ -27,6 +27,8 @@
 ![image.png](https://github.com/itc-1118/bobo-edito/blob/master/images/%E5%BF%AB%E6%8D%B7%E9%94%AE.png?raw=true)
 
  # 最佳实践
+  - 动图比较大，加载中... 
+   ![image.gif](https://github.com/itc-1118/bobo-edito/blob/master/images/%E6%93%8D%E4%BD%9C.gif?raw=true)
 
  # 最佳实践
 
