@@ -19,9 +19,12 @@
 
   设置图
 ![image.png](https://github.com/itc-1118/bobo-edito/blob/master/images/baidu-id-key.png?raw=true)
- - bobo支持快捷键命令win:`Alt+shift+t` mac: `cmd+shift+t`，你可以通过设置改变。
- 设置图
-![image.png](https://github.com/itc-1118/bobo-edito/blob/master/images/baidu-id-key.png?raw=true)
+
+   </br> 
+ - bobo支持快捷键唤起 win:`Alt+shift+t` mac: `cmd+shift+t`，你可以通过设置改变。 
+   设置图
+   Code->首选项->键盘快捷方式 
+![image.png](https://github.com/itc-1118/bobo-edito/blob/master/images/%E5%BF%AB%E6%8D%B7%E9%94%AE.png?raw=true)
  
  
  
