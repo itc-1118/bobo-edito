@@ -1,7 +1,7 @@
 {
   "name": "iEdito",
   "displayName": "啵啵助写",
-  "description": "如果你写单词有压力，不如让啵啵来为你搞定，你输入中国文，啵啵翻译",
+  "description": "如果你写单词有压力，不如让啵啵来为你搞定，你输入中文，啵啵翻译",
   "publisher": "itc-edito",
   "version": "0.0.3",
   "icon": "logo.png",

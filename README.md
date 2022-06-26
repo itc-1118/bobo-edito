@@ -12,9 +12,17 @@
 ```
 
  
- ## 快捷键  
-    win: "Alt+shift+t" 
-    mac": "cmd+shift+t"
-    
+ # 快速开始
+
+- bobo的配置很简单，默认翻译引擎是Google，当然，你也可以设置Baidu翻译引擎，这里需要配置`appid`和`scretkey`。
+[获取Baidu翻译appid和scretkey的最佳途径](http://api.fanyi.baidu.com/manage/developer)  
+
+  vscode扩展设置图
+
+ - Each 
+ ```
+    win: Alt+shift+t
+    mac: cmd+shift+t
+ ```   
  
  
